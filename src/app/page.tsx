@@ -2,6 +2,8 @@
 
 import { motion } from 'motion/react';
 import { useState } from 'react';
+import UtilitiesExpander from '../components/utilities_expander';
+
 
 export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -9,8 +11,16 @@ export default function Home() {
 
   return (
     <main className="min-h-screen p-8 bg-gray-100">
-      <h1 className="text-4xl font-bold mb-8 text-center">Interactive Playground</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">Sketchbook</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+        {/*I'm a new card*/}
+        <div>
+              <UtilitiesExpander />
+        </div>
+
+
 
         {/* Example Card 1 */}
         <motion.div
@@ -19,7 +29,7 @@ export default function Home() {
           transition={{ type: 'spring', stiffness: 300 }}
         >
           <h2 className="text-xl font-semibold mb-4">Hover Animation</h2>
-          <p className="text-gray-600">Hover odver this card to see a spring animation effect</p>
+          <p className="text-gray-600">Hover over this card to see a spring animation effect</p>
         </motion.div>
 
 
