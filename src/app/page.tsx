@@ -19,7 +19,7 @@ export default function Home() {
           transition={{ type: 'spring', stiffness: 300 }}
         >
           <h2 className="text-xl font-semibold mb-4">Hover Animation</h2>
-          <p className="text-gray-600">Hover over this card to see a spring animation effect</p>
+          <p className="text-gray-600">Hover odver this card to see a spring animation effect</p>
         </motion.div>
 
 
