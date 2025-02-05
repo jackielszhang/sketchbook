@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered] = useState(false);
 
   return (
     <main className="min-h-screen p-8 bg-gray-100">
