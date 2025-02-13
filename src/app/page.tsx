@@ -3,24 +3,33 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
 import UtilitiesExpander from '../components/utilities_expander';
+import CSSUtilitiesExpander from '../components/css_utilities_expander';
 
 
 export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isHovered] = useState(false);
+  const cardStyle ="bg-gray-500 rounded-lg p-10 flex items-center justify-center";
 
   return (
     <main className="min-h-screen p-8 bg-gray-100">
       <h1 className="text-4xl font-bold mb-8 text-center">Sketchbook</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <div className="max-w-2xl mx-auto flex flex-col gap-8">
 
 
         {/*I'm a new card*/}
-        <div>
+        <div className={cardStyle}>
               <UtilitiesExpander />
         </div>
 
+CSS
+        <div className={cardStyle}>
+              <CSSUtilitiesExpander />
+        </div>
 
+        <br/>
 
         {/* Example Card 1 */}
         <motion.div

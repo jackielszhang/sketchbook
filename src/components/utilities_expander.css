@@ -1,0 +1,49 @@
+.expander-wrapper {
+    position: relative;
+}
+
+.expander-checkbox {
+    position: absolute;
+    opacity: 100; 
+}
+
+.expander-container {
+    padding: 20px 32px;
+    background: black;
+    color: white;
+    border-radius: 9999px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    cursor: pointer;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.expander-checkbox:checked + label {
+    width: auto;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.circle-main {
+    background: rgb(254, 226, 226);
+}
+
+.circle-expanded {
+    background: white;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.expander-checkbox:checked + label .circle-expanded {
+    transform: scale(1);
+}
+
+.circle-expanded:nth-child(2) { transition-delay: 0s; }
+.circle-expanded:nth-child(3) { transition-delay: 0.1s; }
+.circle-expanded:nth-child(4) { transition-delay: 0.2s; }
