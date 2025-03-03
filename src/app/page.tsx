@@ -3,7 +3,7 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
 import UtilitiesExpander from '../components/utilities_expander';
-import CSSUtilitiesExpander from '../components/css_utilities_expander';
+import ToolBar from '@/components/toolbar'; 
 
 
 export default function Home() {
@@ -24,12 +24,11 @@ export default function Home() {
               <UtilitiesExpander />
         </div>
 
-CSS
-        <div className={cardStyle}>
-              <CSSUtilitiesExpander />
-        </div>
-
         <br/>
+
+        <div className={cardStyle}>
+              <ToolBar />
+        </div>
 
         {/* Example Card 1 */}
         <motion.div

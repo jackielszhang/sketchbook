@@ -2,12 +2,14 @@ import { motion } from 'motion/react';
 import { useState } from 'react';
 
 export default function UtilitiesExpander() {
+
+
     const [isExpanded, setIsExpanded] = useState(false);
     const transitionsAnim = 'type: ease: ["easeIn", "easeOut"], stiffness: 400, damping: 10';
 
     return (
         <motion.div 
-            className="p-5 pl-8 pr-8 bg-black text-white rounded-full flex flex-row gap-2 cursor-pointer"
+            className="p-5 pl-8 pr-8 bg-black text-white rounded-3xl flex flex-row gap-2 cursor-pointer"
             initial={{ width: '200px' }}
             animate={{ width: isExpanded ? 'auto' : '200xp' }}
             layout 
